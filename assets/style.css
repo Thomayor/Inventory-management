@@ -1,0 +1,346 @@
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  .produit {
+    
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+  }
+
+  .produit .nom {
+
+    width: 30%;
+    border: 1px solid #8b0000;
+    
+
+  }
+
+  .produit .quantite{
+
+    width: 30%;
+    border: 1px solid #8b0000;
+  }
+
+
+  .produit2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-top: 23px;
+    margin: 2%;
+  }
+
+
+.produit2 .prixAchatHT .prixVenteHT{
+    width: 15%;
+}
+
+.prixAchatHT {
+  border: 1px solid #8b0000;
+}
+
+.prixVenteHT {
+  border: 1px solid #8b0000;
+}
+ .degre {
+  border: 1px solid #8b0000;
+ }
+
+.produit2 .selectType{
+
+  width: 20%;
+  border: 1px solid #8b0000;
+  background-color: white;
+  
+}
+
+.produit3{
+display: flex;
+align-items: center;
+justify-content: center;
+padding-top: 11px;
+}
+
+.produit3 .label{
+  padding: 9px;
+
+}
+
+.produit3 .degre{
+
+  width : 10%;
+
+}
+
+.produit4{
+
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 45px;
+}
+
+.produit4 .btnAdd{
+  
+  width: 23%;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 4px 4px #8b0000b0;
+}
+
+.btnAdd:hover{
+background: white;
+color: #8b0000;  
+border: 1px solid #8b0000;
+box-shadow: 0px 4px 4px #494848b0;
+
+
+
+}
+
+  
+  .Add {
+    background-color: #fefefe;
+    margin: auto;
+    height: 50%;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 2rem;
+    position: relative;
+    top: 5%;
+  }
+  
+.Add h2{
+
+  padding: 14px;
+  background: #8b0000;
+  border-top-right-radius: 2rem;
+  margin-top: 0px;
+  border-top-left-radius: 2rem;
+  color: white;
+  font-weight: 500;
+
+}
+
+.btnAdd {
+  color: white;
+  background-color: #8b0000;
+}
+
+
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.affichage{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.affichage p{
+  margin-left: 4px;
+  width: 100%;
+}
+
+
+.affichage p input.inputQT{
+
+  background: green;
+  color: white;
+}
+
+.affichage p input.inputQT.couleur{
+
+  background: #8b0000;
+  color: white;
+}
+
+
+ .affichage p input.modifQT{
+
+    background: green;
+    color: white;
+ }
+
+ .affichage p input.modifQT.couleur{
+
+    background: #8b0000;
+    color: white;
+ }
+
+.navBar {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  top: 0;
+  background-color: #8b0000;
+  color: white;
+  border-bottom: 5px solid #ffffff;
+    box-shadow: 0px 4px 4px #8b0000b0;
+}
+
+.navBar h1 {
+  margin-left: 4%;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  position: relative;
+  left: 50%;
+}
+
+li {
+  text-transform: uppercase;
+  padding: 8px 25px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.welcome {
+  margin-top: 6%;
+  text-align: center;
+  color: #8b0000;
+}
+
+.filtre h2 {
+  color: white;
+  width: 15%;
+  border-radius: 1em;
+  background:#8b0000;
+  box-shadow: 0px 4px 4px #020000b0;
+  text-align: center;
+}
+
+.filtre p{
+  color: white;
+  width: 15%;
+  background: #8b0000;
+  padding: 5px;
+  box-shadow: 0px 4px 4px #020000b0;
+} 
+
+.filtre input.stocklist{
+  margin-left: 10px;
+}
+
+.btnModif {
+  margin: 10px;
+  color: #8b0000;
+  background-color: #ffffff;
+}
+
+.btnRemove {
+  color:#8b0000;
+  background-color: #ffffff;
+}
+
+
+footer p {
+  color: #8b0000;
+}
+
+img {
+  width: 100%;
+  box-shadow: 0px 4px 4px #020000b0;
+}
+
+
+@media (max-width: 1106px) {
+
+  ul {
+    left : 30%;
+  }
+
+  .Add  form.formProduct {
+width: 97%;
+
+  }
+
+.produit2 .prixAchatHT{
+
+  width: 30%;
+  margin-right:  10px;
+}
+
+.produit2 .prixVenteHT{
+  width: 30%;
+  margin-right:  10px;
+}
+
+.produit2 .selectType{
+
+  width: 30%;
+}
+
+.produit3{
+display: flex;
+align-items: center;
+justify-content: center;
+padding-top: 11px;
+}
+
+.produit3 .label{
+  padding: 9px;
+
+}
+
+.produit3 .degre{
+
+  width : 10%;
+
+  
+}
+
+}
+
+
+@media (max-width: 950px) {
+
+  ul {
+    left : 0%;
+  }
+    .produit2 .prixAchatHT{
+    
+      width: 10%;
+
+    }
+    
+    .produit2 .prixVenteHT{
+      width: 10%;
+    }
+    
+    .produit2 .selectType{
+    
+      width: 12%;
+    }
+  
+}

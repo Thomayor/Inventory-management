@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css" type="text/css">
+    <title>THE HALL OF FAME
+    </title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navBar">
+                <h1>THE HALL OF FAME</h1>
+                
+                <ul>
+                    <li class="creation">Créer un produit</li>
+                    <li><a href="#gestionStock">Notre stock</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    
+    
+    <h1 class="welcome" id="gestionStock"> Bienvenue sur votre page de Gestion de stocks</h1>
+    
+    <div class="modal">
+        
+        
+        <div class="Add">
+            
+            <h2>Créer un produit  <span class="close">&times;</span> </h2>
+          
+
+<form class="formProduct">
+
+<div class="produit">
+
+    <label for="nom">Nom du Produit</label>
+    <input type="text" class="nom" placeholder="ex: mangue ...">
+    
+    <label for="quantite"> Combien en voulez vous ?</label>
+    <input type="number" class="quantite" min="0" placeholder="ex : 1-1000">
+    
+</div>
+
+<div class="produit2">
+
+    <label for="prixAchatHT"> Votre prix d'Achat HT</label>
+    <input type="number" class="prixAchatHT">
+    
+    <label for="prixVenteHT"> Votre prix de Vente HT</label>
+    <input type="number" class="prixVenteHT">
+    
+    
+    <label for="Type-select"> Type de produits :</label>
+    <select name="selectType" class="selectType">
+        <option value="choixb">--- Choisir boissons ---</option>
+        <option value="Sans Alcool" class="bna">Boissons non-alcoolisées</option>
+        <option value="Alcoolisée" class="ba">Boissons alcoolisées</option>
+    </select>
+    </div>
+
+    <div class ="produit3">
+
+    <label for="degre" class="label">Degré d'Alcool</label>
+    <input type="text" class="degre">
+    
+</div>
+    <div class="produit4">
+   
+        <button class="btnAdd"> Ajouter produits</button>
+
+    </div>
+</form>
+
+</div>
+
+</div>
+
+
+<div class="filtre">
+
+    <h2 class="search">Ma Recherche </h2>
+
+        <input type="text" class="stocklist" placeholder="ex: mangue ...">
+
+
+        <div class="affichageFiltre"></div>
+
+        <h2>Mon Stock</h2>
+        <div class="affichage"></div>
+    </div>
+    
+    <img src="./img/cocktails.jpg">
+
+    <footer>
+        <p>&copy; The Hall of Fame 2022</p>
+    </footer>
+    <script src="./assets/script.js">  </script>
+</body>
+</html>
