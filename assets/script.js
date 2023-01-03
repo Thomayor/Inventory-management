@@ -156,6 +156,24 @@ function affichageStock () {
         });
 
         affichage.innerHTML = para;
+
+        let inputQT = document.querySelector(".inputQT");
+
+        inputQT.addEventListener("input", function(e){
+            inputQT =e.target.value;
+                   
+           if (inputQT < 2 ){
+           
+              e.target.classList.add("couleur");
+           
+           }
+           else {
+           
+                  e.target.classList.remove("couleur");
+              }
+           
+                       });
+
  
         let delButtons = document.querySelectorAll(".btnRemove");
         let modifButtons = document.querySelectorAll(".btnModif");
@@ -170,7 +188,7 @@ function affichageStock () {
             
             <p> Nom du Produit : ${element.nom} 
             <br/>
-            Quantitées demandées : <input class='inputQT' type='number' min="0" value="${element.quantite}">
+            Quantitées demandées : <input class='inputQT2' type='number' min="0" value="${element.quantite}">
             <br/>
             Votre prix d'ACHAT HT :  ${element.prixAchatHT}
             <br/>
@@ -193,6 +211,23 @@ function affichageStock () {
         
         affichage.innerHTML = para;
         
+        let inputQT2 = document.querySelector(".inputQT2")
+
+        inputQT2.addEventListener("input", function(e){
+              inputQT2 =e.target.value;
+                    
+            if (inputQT2 < 2 ){
+            
+               e.target.classList.add("couleur");
+            
+            }
+            else {
+            
+                   e.target.classList.remove("couleur");
+               }
+            
+                        });
+
         let delButtons = document.querySelectorAll(".btnRemove");
         let modifButtons = document.querySelectorAll(".btnModif");
         modifier (modifButtons, para, affichage);

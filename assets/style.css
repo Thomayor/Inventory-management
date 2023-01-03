@@ -166,13 +166,25 @@ box-shadow: 0px 4px 4px #494848b0;
 }
 
 
-.affichage p input.inputQT{
+.affichage p .inputQT{
 
   background: green;
   color: white;
 }
 
-.affichage p input.inputQT.couleur{
+.affichage p .inputQT.couleur{
+
+  background: #8b0000;
+  color: white;
+}
+
+.affichage p .inputQT2{
+
+  background: green;
+  color: white;
+}
+
+.affichage p .inputQT2.couleur{
 
   background: #8b0000;
   color: white;
@@ -274,7 +286,7 @@ img {
 }
 
 
-@media (max-width: 1106px) {
+@media (max-width: 1285px) {
 
   ul {
     left : 30%;
